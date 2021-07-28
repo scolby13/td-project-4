@@ -2,9 +2,7 @@
     padding: 0 10px;
     @media (min-width: 768px) {
         max-width: 1400px;
-        display: block;
-        margin-left: auto;
-        margin-right: auto;
+        @include center;
     }
   }
   
@@ -28,9 +26,18 @@
         justify-content: center;
         margin-top: 0;
         align-items: center;
+        &+[class^=col] {
+          margin-left: 10px;
+        }
     }
   }
-  
+
+  @for $i from 1 through 12 {
+    .col-#{$i} {
+      flex-basis: calc(#{$i} * 8.33);
+    }
+  }
+
   .theme.col-1 {
     background-color: #927bc1;
   }
@@ -93,9 +100,7 @@
   }
   
   .img-frame {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    @include center;
     margin-top: 10px;
     max-width: 100%;
     padding: 13px;
@@ -103,7 +108,11 @@
   }
   
   .img-logo {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+    @include center;
+  }
+
+  .centered {
+    @include mq('med') {
+      @include center;
+    }
   }

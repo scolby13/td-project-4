@@ -1,4 +1,27 @@
+// Margin Reset
+
 @mixin margin {
     margin-left: intial;
     margin-right: initial;
+}
+
+// Media Query
+
+@mixin mq($break) {
+    $value: map-get($breakpoints, $break);
+    $med: map-get($breakpoints, 'med');
+
+        @if $value >= $med {
+            @media (min-width: $value) {
+                @content;
+            }
+        }
+}
+
+// Center Item
+
+@mixin center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
 }
