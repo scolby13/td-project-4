@@ -470,54 +470,66 @@ a {
   }
 }
 
-.col-1 {
-  flex-basis: calc(1 * 8.33);
+@media (min-width: 768px) {
+  .col-1 {
+    flex-basis: 8.333%;
+  }
 }
-
-.col-2 {
-  flex-basis: calc(2 * 8.33);
+@media (min-width: 768px) {
+  .col-2 {
+    flex-basis: 16.666%;
+  }
 }
-
-.col-3 {
-  flex-basis: calc(3 * 8.33);
+@media (min-width: 768px) {
+  .col-3 {
+    flex-basis: 24.999%;
+  }
 }
-
-.col-4 {
-  flex-basis: calc(4 * 8.33);
+@media (min-width: 768px) {
+  .col-4 {
+    flex-basis: 33.332%;
+  }
 }
-
-.col-5 {
-  flex-basis: calc(5 * 8.33);
+@media (min-width: 768px) {
+  .col-5 {
+    flex-basis: 41.665%;
+  }
 }
-
-.col-6 {
-  flex-basis: calc(6 * 8.33);
+@media (min-width: 768px) {
+  .col-6 {
+    flex-basis: 49.998%;
+  }
 }
-
-.col-7 {
-  flex-basis: calc(7 * 8.33);
+@media (min-width: 768px) {
+  .col-7 {
+    flex-basis: 58.331%;
+  }
 }
-
-.col-8 {
-  flex-basis: calc(8 * 8.33);
+@media (min-width: 768px) {
+  .col-8 {
+    flex-basis: 66.664%;
+  }
 }
-
-.col-9 {
-  flex-basis: calc(9 * 8.33);
+@media (min-width: 768px) {
+  .col-9 {
+    flex-basis: 74.997%;
+  }
 }
-
-.col-10 {
-  flex-basis: calc(10 * 8.33);
+@media (min-width: 768px) {
+  .col-10 {
+    flex-basis: 83.33%;
+  }
 }
-
-.col-11 {
-  flex-basis: calc(11 * 8.33);
+@media (min-width: 768px) {
+  .col-11 {
+    flex-basis: 91.663%;
+  }
 }
-
-.col-12 {
-  flex-basis: calc(12 * 8.33);
+@media (min-width: 768px) {
+  .col-12 {
+    flex-basis: 99.996%;
+  }
 }
-
 .theme.col-1 {
   background-color: #927bc1;
 }

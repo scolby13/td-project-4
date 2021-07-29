@@ -32,11 +32,34 @@
     }
   }
 
+  @function basis($col, $percent) {
+    @return $col * $percent;
+  }
   @for $i from 1 through 12 {
-    .col-#{$i} {
-      flex-basis: calc(#{$i} * 8.33);
+    @media (min-width: 768px) {
+      .col-#{$i} {
+        flex-basis: basis($i, 8.333%);
+      }
     }
   }
+  // @function width-vary($i , $base: 8.33%) {
+  //   @return calc(#{$i} * $base);
+  // }
+
+  // @media (min-width: 768px) {
+  //   @for $i from 1 through 12 {
+  //     .col-#{$i} {
+  //         flex-basis: width-vary(#{$i});
+  //     }
+  //   }
+  // }
+  // @media (min-width: 768px) {
+  //   @for $i from 1 through 12 {
+  //     .col-#{$i} {
+  //         flex-basis: calc(#{$i} * 8.33%);
+  //     }
+  //   }
+  // }
 
   .theme.col-1 {
     background-color: #927bc1;
