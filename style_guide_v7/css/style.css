@@ -634,7 +634,7 @@ a {
 
 @media (min-width: 768px) {
   .logo {
-    margin-left: intial;
+    margin-left: initial;
     margin-right: initial;
   }
 }
