@@ -5,11 +5,11 @@ $color-secondary: #51ddfc;
 $white: #fff;
 $dark-grey: #777;
 $light-grey: #ccc;
-$btn-color-default: #51ddfc;
-$btn-color-error: #e4757a;
-$btn-color-info: #927bc1;
-$btn-color-success: #63cc82;
-$btn-color-warning: #fd7856;
+// $btn-color-default: #51ddfc;
+// $btn-color-error: #e4757a;
+// $btn-color-info: #927bc1;
+// $btn-color-success: #63cc82;
+// $btn-color-warning: #fd7856;
 
 // Breakpoints
 
@@ -33,3 +33,13 @@ $themes: (
     '11': #51ddfc,
     '12': #80e8d1,
 );
+
+// Button Colors
+
+$btn-colors: (
+    'default': #51ddfc,
+    'error': #e4757a,
+    'info': #927bc1,
+    'success': #63cc82,
+    'warning': #fd7856,
+)

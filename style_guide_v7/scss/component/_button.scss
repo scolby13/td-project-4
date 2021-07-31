@@ -6,25 +6,40 @@
     padding: 10px 0;
     text-transform: uppercase;
     border-radius: 5px;
+    @include mq('med') {
+      padding: 10px 30px;
+      &+ .btn {
+        margin-left: 10px;
+      }
+    }
   }
   
-  .default {
-    background-color: $btn-color-default;
-  }
+  // .default {
+  //   background-color: $btn-color-default;
+  // }
   
-  .error {
-    background-color: $btn-color-error;
-  }
+  // .error {
+  //   background-color: $btn-color-error;
+  // }
   
-  .info {
-    background-color: $btn-color-info;
-  }
+  // .info {
+  //   background-color: $btn-color-info;
+  // }
   
-  .success {
-    background-color: $btn-color-success;
-  }
+  // .success {
+  //   background-color: $btn-color-success;
+  // }
   
-  .warning {
-    background-color: $btn-color-warning;
-  }
+  // .warning {
+  //   background-color: $btn-color-warning;
+  // }
   
+  @each $btn-color, $color in $btn-colors {
+    .#{$btn-color} {
+      background-color: $color;
+      transition: background-color .7s;
+      &:hover {
+        background-color: lighten($color, 15%);
+      }
+    }
+  }

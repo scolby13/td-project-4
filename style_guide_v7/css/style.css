@@ -385,25 +385,53 @@ a {
   text-transform: uppercase;
   border-radius: 5px;
 }
+@media (min-width: 768px) {
+  .btn {
+    padding: 10px 30px;
+  }
+  .btn + .btn {
+    margin-left: 10px;
+  }
+}
 
 .default {
   background-color: #51ddfc;
+  transition: background-color 0.7s;
+}
+.default:hover {
+  background-color: #9cecfd;
 }
 
 .error {
   background-color: #e4757a;
+  transition: background-color 0.7s;
+}
+.error:hover {
+  background-color: #f1b5b8;
 }
 
 .info {
   background-color: #927bc1;
+  transition: background-color 0.7s;
+}
+.info:hover {
+  background-color: #bdafd9;
 }
 
 .success {
   background-color: #63cc82;
+  transition: background-color 0.7s;
+}
+.success:hover {
+  background-color: #9ddfb0;
 }
 
 .warning {
   background-color: #fd7856;
+  transition: background-color 0.7s;
+}
+.warning:hover {
+  background-color: #feb4a2;
 }
 
 .form {
@@ -434,6 +462,14 @@ a {
 @media (min-width: 768px) {
   .container {
     max-width: 1400px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .centered {
     display: block;
     margin-left: auto;
     margin-right: auto;
@@ -472,62 +508,51 @@ a {
 
 @media (min-width: 768px) {
   .col-1 {
-    flex-basis: 8.333%;
+    flex-basis: 8.334%;
   }
-}
-@media (min-width: 768px) {
+
   .col-2 {
-    flex-basis: 16.666%;
+    flex-basis: 16.668%;
   }
-}
-@media (min-width: 768px) {
+
   .col-3 {
-    flex-basis: 24.999%;
+    flex-basis: 25.002%;
   }
-}
-@media (min-width: 768px) {
+
   .col-4 {
-    flex-basis: 33.332%;
+    flex-basis: 33.336%;
   }
-}
-@media (min-width: 768px) {
+
   .col-5 {
-    flex-basis: 41.665%;
+    flex-basis: 41.67%;
   }
-}
-@media (min-width: 768px) {
+
   .col-6 {
-    flex-basis: 49.998%;
+    flex-basis: 50.004%;
   }
-}
-@media (min-width: 768px) {
+
   .col-7 {
-    flex-basis: 58.331%;
+    flex-basis: 58.338%;
   }
-}
-@media (min-width: 768px) {
+
   .col-8 {
-    flex-basis: 66.664%;
+    flex-basis: 66.672%;
   }
-}
-@media (min-width: 768px) {
+
   .col-9 {
-    flex-basis: 74.997%;
+    flex-basis: 75.006%;
   }
-}
-@media (min-width: 768px) {
+
   .col-10 {
-    flex-basis: 83.33%;
+    flex-basis: 83.34%;
   }
-}
-@media (min-width: 768px) {
+
   .col-11 {
-    flex-basis: 91.663%;
+    flex-basis: 91.674%;
   }
-}
-@media (min-width: 768px) {
+
   .col-12 {
-    flex-basis: 99.996%;
+    flex-basis: 100.008%;
   }
 }
 .theme.col-1 {
@@ -608,10 +633,9 @@ a {
 }
 
 @media (min-width: 768px) {
-  .centered {
-    display: block;
-    margin-left: auto;
-    margin-right: auto;
+  .logo {
+    margin-left: intial;
+    margin-right: initial;
   }
 }
 
@@ -621,17 +645,6 @@ a {
   display: flex;
   flex-direction: column;
 }
-@media (min-width: 768px) {
-  .nav {
-    flex-direction: row;
-    justify-content: flex-end;
-    align-items: center;
-  }
-  .nav-link {
-    flex-basis: 100%;
-  }
-}
-
 .nav-link {
   text-align: center;
   border-radius: 5px;
@@ -640,10 +653,19 @@ a {
   width: 100%;
   transition: background-color 0.2s ease-in-out, color 0.2s ease-in-out;
 }
-
 .nav-link:hover {
   color: #fff;
   background-color: #58e1c1;
+}
+@media (min-width: 768px) {
+  .nav {
+    flex-direction: row;
+    justify-content: flex-end;
+    align-items: center;
+  }
+  .nav-link {
+    flex-basis: 100px;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */
